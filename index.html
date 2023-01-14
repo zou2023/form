@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
   </head>
-  <body></body>
+  <body>
+    <div class="left-side">
+      <p>
+        Photo by
+        <a
+          href="https://unsplash.com/@allisonsaeng?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Allison Saeng</a
+        >
+        on
+        <a
+          href="https://unsplash.com/photos/sbKnvZTyzT0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Unsplash</a
+        >
+      </p>
+    </div>
+    <div class="right-side">
+      <h1>
+        This is not a real online service! <br />
+        Sign up to get full access!
+      </h1>
+      <h1 style="font-size: 1.4rem">You know you want to!</h1>
+
+      <form class="form" id="signup" action="#">
+        <h3>Let's do this!</h3>
+        <div class="grid">
+          <div class="group">
+            <label for="first_name">FIRST NAME</label>
+            <input type="text" id="first_name" required />
+          </div>
+          <div class="group">
+            <label for="last_name">LAST NAME</label>
+            <input type="text" id="last_name" required />
+          </div>
+          <div class="group">
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" required />
+          </div>
+          <div class="group">
+            <label for="phone">PHONE NUMBER</label>
+            <input type="text" id="phone" required />
+          </div>
+          <div class="group">
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password" required />
+          </div>
+          <div class="group">
+            <label for="confirm">CONFIRM PASSWORD</label>
+            <input type="password" id="confirm" required />
+          </div>
+        </div>
+        <p id="text"></p>
+      </form>
+      <button type="submit" form="signup" id="button">Create Account</button>
+      <p id="login">Already have an account? <a href="#">Log in</a></p>
+    </div>
+    <script src="main.js"></script>
+  </body>
 </html>
